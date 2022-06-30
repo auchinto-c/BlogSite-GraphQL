@@ -2,7 +2,7 @@
 
 ## Introduction
 <hr>
-This project showcases demo blog site with GraphQL. We use GraphCMS as the backend platform to manage the content. This website focuses on a gallery view of the posts available in the CMS environment, and the dynamically generated pages for each post.
+This project showcases a demo blog site developed with GraphQL. We use GraphCMS as the backend platform to manage the content. This website focuses on a gallery view of the posts available in the CMS environment, and dynamically generates pages for each post.
 <br><br>
 
 ## Credits
@@ -10,7 +10,7 @@ This project showcases demo blog site with GraphQL. We use GraphCMS as the backe
 
 |              | Details |
 |--------------|--------------------------------------------------------------------------------------------------------------------|
-| **Tutorial** | [Blog Site with GraphQL](https://www.youtube.com/watch?v=Dc7LAgqy1_E)                                              |
+| **Tutorial** | [Dev Ed - Blog Site with GraphQL](https://www.youtube.com/watch?v=Dc7LAgqy1_E)                                              |
 | **Code**     | [developedbyed - Digital Scribbles](https://github.com/developedbyed/digital-scribbles)                            |
 
 ## Brief
@@ -28,18 +28,18 @@ This project showcases demo blog site with GraphQL. We use GraphCMS as the backe
 <hr>
 
 1.  Setup the GraphCMS environment.
-    a.  Create a new Model called `Post`. Add the following items to it's definition.
-        i. Single Line Text - `Title`
-        ii. Slug - `Slug`
-        iii. Rich Text - `Content`
-        iv. Asset Picker - `Cover Image`
-        v. Date - `Date Published`
-        vi. Relationship - `Two Way Reference - Author (Model)`
-    b. Create a new Model called `Author`. Add the following items to it's definition.
-        i. Single Line Text - `Name`
-        ii. Asset Picker - `Avatar`
-        iii. Relationship - `Two Way Reference - Post (Model)`
-    c. Add in some dummy data for both of the models, so that it later shows up in our front end.
+    1.  Create a new Model called `Post`. Add the following items to it's definition.
+        1. Single Line Text - `Title`
+        2. Slug - `Slug`
+        3. Rich Text - `Content`
+        4. Asset Picker - `Cover Image`
+        5. Date - `Date Published`
+        6. Relationship - `Two Way Reference - Author (Model)`
+    2. Create a new Model called `Author`. Add the following items to it's definition.
+        1. Single Line Text - `Name`
+        2. Asset Picker - `Avatar`
+        3. Relationship - `Two Way Reference - Post (Model)`
+    3. Add in some dummy data for both of the models, so that it later shows up in our front end.
 2.  Create a **next-js** app using `npx create-next-app@latest app-name`
 3.  Implement the front end with the following objectives:
     1.  Fetch the entries from graph-cms using graphql
@@ -87,4 +87,4 @@ This project showcases demo blog site with GraphQL. We use GraphCMS as the backe
    4. Add in the facility to share the post
    5. Add in the facility to search for specific posts, based on genres and other filters
    6. Add a facility to submit a post from the portal instead of the updating entries in cms platform.
-2. This entire project can be considered as step to having a personal portfolio and blog site.
+2. This entire project can be considered as a step to having a personal portfolio and blog site.
